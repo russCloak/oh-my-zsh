@@ -1,6 +1,7 @@
 # if using GNU screen, let the zsh tell screen what the title and hardstatus
 # of the tab window should be.
-if [[ "$TERM" == screen* ]]; then
+# if [[ "$TERM" == screen* ]]; then
+if [[ "something other than screen" == screen* ]]; then
   if [[ $_GET_PATH == '' ]]; then
     _GET_PATH='echo $PWD | sed "s/^\/Users\//~/;s/^\/home\//~/;s/^~$USER/~/"'
   fi
